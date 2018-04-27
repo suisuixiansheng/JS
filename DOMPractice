@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		function sun(){
+			var name =document.getElementById('name').value().trim();
+			var psw = document.getElementById('psw').value().trim();
+			if(name !== '123'){
+				alert("您的用户名有误");
+			}else if(psw !== '123'){
+				alert("您密码有误")；
+				document.getElementById('name').setAttribute('value','');
+				document.getElementById('name').setAttribute('psw',''); 
+			}
+		}
+		
+	</script>
+	账号：<input type="text" value="" id="name" /> <br />
+	密码: <input type="password" value="" id="psw" /> <br />
+	<button onclick="sub()">提交</button>
+</body>
+</html>
